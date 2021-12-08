@@ -1,0 +1,51 @@
+.logo img{
+    width: 150px;
+    height: 150px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#nav{
+    background-color: green;
+}
+
+.bg-light{
+    background-color: none !important;
+}
+
+.nav-item{
+    padding: 0px 20px;
+}
+
+.nav-item a{
+    color: white !important;
+}
+
+.nav-item a:hover{
+    color: gray !important;
+    transition: .5s ease;
+}
+
+#blog .card-title{
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#blog .card{
+    margin-bottom: 30px;
+}
+
+footer{
+    background-color: green !important;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+footer h3{
+    font-size: 18px;
+    padding: 10px;
+    
+}
