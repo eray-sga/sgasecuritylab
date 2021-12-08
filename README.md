@@ -7,4 +7,4 @@
  - Insecure Direct Object References (IDOR)
  - Session Fixation
  
-# Web Adress: sgasecuritylab.com
+# Web Adress: https://sgasecuritylab.com
