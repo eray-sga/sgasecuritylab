@@ -9,7 +9,7 @@ $row = $sorgu->rowCount();
 
 if($row==0){
     header("Location:login.php");
-    exit;
+    
 }
 
 $sorgu=$db->prepare("SELECT * FROM kullanici where username=:user");
@@ -19,7 +19,7 @@ $sorgu=$db->prepare("SELECT * FROM kullanici where username=:user");
       $vericek=$sorgu->fetch(PDO::FETCH_ASSOC);
      
     
-
+      
 ?>
 
 <div class="container mt-5">
