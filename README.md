@@ -8,4 +8,4 @@
  - Session Fixation
  - Identification and Authentication Failures
  
-# Web Adress: https://sgasecuritylab.com
+<img width="1422" alt="image" src="https://github.com/eray-sga/sgasecuritylab/assets/22051606/678f7af2-2978-4e20-ada8-497131092146">
