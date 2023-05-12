@@ -22,15 +22,11 @@ if ($_POST["user"] != "" && $_POST["parola"] != "") {
         @move_uploaded_file($tmp_name, "$uploads_dir/$benzersizad$name");
 
         $liste = "SELECT * FROM kullanici WHERE username='$user'";
-        $run = $db->query($liste);
+        $db->query($liste);
 
-        if($run->rowCount()==0){
-            $sql = "INSERT INTO kullanici(username,pass,hakkinda,gorsel) VALUES ('$user','$parola','$hakkinda','$refimgyol')";
-            $db->query($sql);
-            header("Location:login.php?kayit=ok");
-        } else{
-            header("Location:login.php?uye=var");
-        }
+        $sql = "INSERT INTO kullanici(username,pass,hakkinda,gorsel) VALUES ('$user','$parola','$hakkinda','$refimgyol')";
+        $db->query($sql);
+        header("Location:login.php?kayit=ok");
     }
 } else {
     header("Location:login.php?kayit=no");
