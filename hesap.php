@@ -2,8 +2,12 @@
 require_once 'includes/header.php';
 
 if(isset($_POST["gonder"])){
- 
-    $sonuc = shell_exec("set /a ".$_POST["deger"]);
+    $deger = $_POST["deger"]
+   if (PHP_OS_FAMILY === 'Windows') {
+        $sonuc = shell_exec("set /a $deger");
+    } else {
+        $sonuc = shell_exec("echo $(( $deger ))");
+    }
     echo '<h3 style="padding-left:50px; padding-top:20px">Sonuç: '.$sonuc.'</h3>';
   
 }
