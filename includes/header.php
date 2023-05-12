@@ -2,7 +2,7 @@
 @ob_start();
 @session_start();
 require_once 'system/db.php';
-require_once 'system/db.php'; ?>
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
